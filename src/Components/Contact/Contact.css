@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Contact {
+  height: 100vh;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 639px) {
+  .Contact {
+    height: 145vh;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+  }
+}

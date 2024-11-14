@@ -3,13 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@alloc/quick-lru": "^5.2.0",
+    "@babel/runtime": "^7.24.6",
+    "@emailjs/browser": "^4.3.3",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@react-icons/all-files": "^4.1.0",
+    "assert": "^2.1.0",
+    "axios": "^1.7.7",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "firebase": "^11.0.1",
+    "framer-motion": "^11.0.25",
+    "fuse.js": "^7.0.0",
+    "gsap": "^3.12.5",
+    "https-browserify": "^1.0.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-icons": "^5.3.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-spinners": "^0.13.8",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "swiper": "^11.1.14",
+    "tailwindcss": "^3.4.4",
+    "url": "^0.11.4",
+    "util": "^0.12.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +54,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "webpack": "^5.95.0"
   }
 }

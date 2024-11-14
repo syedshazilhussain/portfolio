@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.skill_section {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.container {
+  width: 100vw;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background: #0a2b3c;
+  border-radius: 10px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #1f9cff;
+}
+
+.container .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+  box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  transition: 0.5s;
+}
+
+.container:hover .skills {
+  filter: blur(1px);
+  opacity: 0.3;
+  cursor: grab;
+}
+
+.container .skills:hover {
+  filter: blur(0px);
+  cursor: grab;
+  opacity: 1;
+}
+
+.container .skills h3 {
+  min-width: 180px;
+  text-align: right;
+  padding-right: 20px;
+  color: #1f9cff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.container .skills .rating {
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+  padding-left: 3rem;
+  cursor: grab;
+}
+
+.container .skills .rating i {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #1f9cff;
+  overflow: hidden;
+}
+
+.container .skills .rating i:nth-child(2n + 1)::before {
+  right: 4px;
+  left: initial;
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    width: 100vw;
+    position: relative;
+    left: -4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 10rem;
+    background: #0a2b3c;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+      inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+      8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -5rem;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+      inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+      8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    width: 90vw;
+  }
+  .container .skills .name {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .container .skills .rating {
+    position: relative;
+    display: flex;
+    margin-left: -7rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .container {
+    margin-top: 18rem;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -5rem;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+      inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+      8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    width: 90vw;
+  }
+  .container .skills .name {
+    font-size: 0.6em;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 1.2rem;
+  }
+  .container .skills .rating {
+    position: relative;
+    display: flex;
+    margin-left: -9rem;
+  }
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shazil-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.shazil__inner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  background-color: #333;
+  border-radius: 50px;
+  animation: backgroundColor 9s forwards;
+  transition: .9s;
+}
+
+.letter {
+  animation: rotateColor 2s infinite alternate;
+  animation-delay: 0.3s;
+  animation-duration: 6s;
+  margin-right: 10px;
+}
+
+@keyframes backgroundColor {
+  0% {
+    color: #333;
+    transition: .9s;
+    opacity: 0;
+  }
+  
+  50% {
+    color: #61DAFB;
+    transition: .9s;
+    opacity: 1.5;
+  }
+  
+  100% {
+    color: #333;
+    transition: .9s;
+    opacity: 0;
+  }
+}
+@keyframes rotateColor {
+  0% {
+    transform: rotate(0deg);
+    color: #333;
+  }
+
+  50% {
+    transform: rotate(380deg);
+    color: #61DAFB;
+  }
+  
+  100% {
+    transform: rotate(370deg);
+    color: #333;
+  }
+}
